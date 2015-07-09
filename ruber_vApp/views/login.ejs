@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  
+    <title>login</title>
+    
+     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      
+      <!-- Latest compiled and minified CSS for Bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Optional Bootstrap theme (Recommended) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript for Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+</head>
+<body background="/images/meet.jpg">
+ <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Ruber</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home </a></li>
+                <li><a href="#">Product</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">About Us</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More info <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Free Trial</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+    <div id="login-overlay" class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+             
+              <h4 class="modal-title" id="myModalLabel">Login to your Ruber account</h4>
+          </div>
+          <div class="modal-body">
+      <div class="row">																														
+                  <div class="col-xs-6">
+                      <div class="well">
+                          <form id="loginForm" method="POST" action="/validateSignin" novalidate="novalidate">
+                              <div class="form-group">
+                                  <label for="Email-id" class="control-label">Email Id</label>
+                                  <input type="text" class="form-control" id="email" name="email" value="" required="true" title="Please enter you email" placeholder="example@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Password</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="true" title="Please enter your password">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                               <button type="submit" class="btn btn-success btn-block">Login</button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-xs-6">
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-check text-success"></span> Don't have an account</li>
+                          <li><span class="fa fa-check text-success"></span> Click here to register</li>
+                          </ul>
+                      <p><a href="/signup" class="btn btn-info btn-block">Register now!</a></p>
+                  </div>
+			<div class="col-xs-6">
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-pencil "></span> Forgot password ?</li>
+                          <li><span class="fa fa-pencil "></span> Click below to reset</li>
+                          </ul>
+                      <p><a href="/resetPassword" class="btn btn-info btn-block">Reset Password</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

@@ -3,18 +3,19 @@
   <head>
     <title><%= title %></title>
       
+      <!-- Latest compiled and minified jQuery library CDN -->
       <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
       <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       
     <link rel='stylesheet' href='/stylesheets/style.css' />
       
-      <!-- Latest compiled and minified CSS -->
+      <!-- Latest compiled and minified CSS for Bootstrap-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-        <!-- Optional theme -->
+        <!-- Optional Bootstrap theme (Recommended) -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-        <!-- Latest compiled and minified JavaScript -->
+        <!-- Latest compiled and minified JavaScript for Bootstrap -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       
   </head>
@@ -64,14 +65,21 @@
       <h3>Please register yourself as </h3>
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          User Type
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
-          <li><a href="#">Corporate User</a></li>
-          <li><a href="#">Standalone User</a></li>
-          <li><a href="#">Expert</a></li>
+          <li><a href="/corporateUser">Corporate User</a></li>
+          <li><a href="/individualUser">Individual User</a></li>
+          <li><a href="/expert">Expert</a></li>
         </ul>
+      </div>
+      <br/>
+      <br/>
+      <h3> Already a user ? </h3>
+      <p> Please log in </p>
+      <div class="btn-toolbar" role="toolbar" aria-label="...">
+        <button type="button" class="btn btn-default"> <a href="/login"> Login here </a></button>  
       </div>
   </body>
 </html>
