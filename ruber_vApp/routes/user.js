@@ -18,7 +18,7 @@ exports.RegisterIndividualUser=function(req, res){
 
 
 exports.RegisterExpert=function(req, res){
-	res.render('expert',{ title: 'Expert User Registeration' });
+	res.render('registerExpert',{ title: 'Expert User Registeration' });
 };
 
 exports.resetPassword=function(req, res){

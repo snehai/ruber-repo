@@ -19,7 +19,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       
   </head>
-  <body background="/images/meet.jpg">
+   <body background="/images/meet.jpg">
       
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
@@ -60,7 +60,7 @@
       
                   
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-   	<form action="/registerCorporateUser" method="post">
+   	<form action="/registerExpertUser" method="post">
           <div class="panel panel-info">
             <div class="panel-heading">
               <div class="col-md-3 col-lg-3 " align="left"> </div>
@@ -87,7 +87,7 @@
         <p>
 			Name of your corporate:
          </p>
-		<input type="text" name="corporate" value="" id="corporate" size="50" width="300px" required></input>
+		<input type="text" name="corporate" value="" id="corporate" size="50" width="300px" placeholder="Optional"></input>
  		<br/><br/><br/><p>
 			Billing address:
                   </p>
@@ -97,6 +97,38 @@
 			Phone number:
                   </p>
 		<input type="text" name="phone" value="" id="phone" size="50" width="300px" required></input>
+        
+        <h3> Please enter your bank details below </h3>
+        <br/><br/><p>
+			Bank name:
+                  </p>
+		<input type="text" name="bank-name" value="" id="bank-name" size="50" width="300px" required></input>
+       
+       <br/><br/><p>
+			Account number:
+                  </p>
+		<input type="text" name="account-number" value="" id="account-number" size="50" width="300px" required></input>
+    
+       <br/><br/><p>
+			Routing number:
+                  </p>
+		<input type="text" name="routing-number" value="" id="routing-number" size="50" width="300px" required></input>
+
+        <br/><br/><br/><p>
+			Skills summary:
+                  </p>
+		<input type="text" name="skill-summary" value="" id="skill-summary" size="50" width="300px" required></input>
+
+        <br/><br/><br/><p>
+			Skills description:
+                  </p>
+		<textarea name="skill-description" value="" id="skill-description" rows="3" cols="50" required></textarea>
+
+        <br/><br/><p>
+			Rate:
+                  </p>
+		<input type="text" name="rate" value="" id="rate" size="50" width="300px" required></input>
+
                 </div>
               </div>
               <br/>
@@ -108,6 +140,6 @@
           </div>
           </div>
 	</form>
-    </div>
+        </div>
   </body>
 </html>
