@@ -6,6 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
+  , register = require('./routes/register')
   , http = require('http')
   , path = require('path');
 
@@ -33,6 +34,10 @@ app.get('/corporateUser', user.RegisterCorporateUser);
 app.get('/individualUser', user.RegisterIndividualUser);
 app.get('/expert', user.RegisterExpert);
 app.get('/resetPassword', user.resetPassword);
+
+app.post('/registerIndividualUser', register.confirmIndividualUser);
+app.post('/registerCorporateUser', register.confirmCorporateUser);
+app.post('/registerExpertUser', register.confirmExpertUser);
 
 app.get('/login', user.login);
 app.get('/users', user.list);

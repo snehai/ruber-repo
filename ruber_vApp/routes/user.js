@@ -1,6 +1,8 @@
 
 /*
- * GET users listing.
+ * This JavaScript file provides the important user related functionalities.
+ * These functionalities include providing registeration page, login page, reset the password.
+ * There is not much operations to be done here other than rendering the required page.
  */
 
 exports.list = function(req, res){
