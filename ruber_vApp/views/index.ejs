@@ -17,7 +17,14 @@
 
         <!-- Latest compiled and minified JavaScript for Bootstrap -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      
+     	<script language="javascript" type="text/javascript">
+
+function openPayment() 
+{
+    window.location.href = "./payment";
+}
+
+</script> 
   </head>
   <body background="/images/meet.jpg">
       
@@ -81,5 +88,13 @@
       <div class="btn-toolbar" role="toolbar" aria-label="...">
         <button type="button" class="btn btn-default"> <a href="/login"> Login here </a></button>  
       </div>
+      <br/>
+      <br/>
+      <h3> Payment </h3>
+     
+      <div class="btn-toolbar" role="toolbar" aria-label="...">
+        <button type="button" class="btn btn-default" onclick="return openPayment()"> Click here </a></button>  
+      </div>
+      
   </body>
 </html>

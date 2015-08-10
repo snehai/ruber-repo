@@ -9,6 +9,10 @@ exports.list = function(req, res){
   res.send("respond with a resource");
 };
 
+exports.OpenPayment=function(req, res){
+	res.render('payment',{ title: 'Payment' });
+};
+
 exports.RegisterCorporateUser=function(req, res){
 	res.render('registerCorporateUser', { title: 'Corporate User Registeration' });
 };
